@@ -18,6 +18,7 @@
 		E39564B6239A439B003FBC23 /* ListAlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564B5239A439B003FBC23 /* ListAlbumController.swift */; };
 		E39564B8239A6788003FBC23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564B7239A6788003FBC23 /* User.swift */; };
 		E39564BA239A67C6003FBC23 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564B9239A67C6003FBC23 /* UserAPI.swift */; };
+		E39564C0239A75CE003FBC23 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564BF239A75CE003FBC23 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E39564B5239A439B003FBC23 /* ListAlbumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAlbumController.swift; sourceTree = "<group>"; };
 		E39564B7239A6788003FBC23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E39564B9239A67C6003FBC23 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		E39564BF239A75CE003FBC23 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,15 +107,17 @@
 		E3956452239A05C8003FBC23 /* listAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				E39564BE239A70ED003FBC23 /* Controller */,
 				E39564BD239A70D5003FBC23 /* Model */,
 				E3956453239A05C8003FBC23 /* AppDelegate.swift */,
 				E3956455239A05C8003FBC23 /* SceneDelegate.swift */,
+				E39564B5239A439B003FBC23 /* ListAlbumController.swift */,
 				E3956459239A05C8003FBC23 /* Main.storyboard */,
+				E3956457239A05C8003FBC23 /* ViewController.swift */,
 				E395645C239A05CD003FBC23 /* Assets.xcassets */,
 				E395645E239A05CD003FBC23 /* LaunchScreen.storyboard */,
 				E3956461239A05CD003FBC23 /* Info.plist */,
 				E39564B9239A67C6003FBC23 /* UserAPI.swift */,
+				E39564BF239A75CE003FBC23 /* UserTableViewCell.swift */,
 			);
 			path = listAlbum;
 			sourceTree = "<group>";
@@ -142,15 +146,6 @@
 				E39564B7239A6788003FBC23 /* User.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E39564BE239A70ED003FBC23 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E3956457239A05C8003FBC23 /* ViewController.swift */,
-				E39564B5239A439B003FBC23 /* ListAlbumController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +281,7 @@
 			files = (
 				E3956458239A05C8003FBC23 /* ViewController.swift in Sources */,
 				E39564B6239A439B003FBC23 /* ListAlbumController.swift in Sources */,
+				E39564C0239A75CE003FBC23 /* UserTableViewCell.swift in Sources */,
 				E3956454239A05C8003FBC23 /* AppDelegate.swift in Sources */,
 				E39564B8239A6788003FBC23 /* User.swift in Sources */,
 				E3956456239A05C8003FBC23 /* SceneDelegate.swift in Sources */,

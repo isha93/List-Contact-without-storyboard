@@ -36,7 +36,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.button.setTitle("asu", for: .normal)
+        self.button.setTitle("asu", for: .normal)
         // Do any additional setup after loading the view.
     }
     
