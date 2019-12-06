@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct User {
+    let name : String?
+    let jobTitle : String?
+    let country : String?
+}

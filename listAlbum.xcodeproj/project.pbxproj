@@ -15,6 +15,9 @@
 		E3956460239A05CD003FBC23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E395645E239A05CD003FBC23 /* LaunchScreen.storyboard */; };
 		E395646B239A05CD003FBC23 /* listAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E395646A239A05CD003FBC23 /* listAlbumTests.swift */; };
 		E3956476239A05CD003FBC23 /* listAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3956475239A05CD003FBC23 /* listAlbumUITests.swift */; };
+		E39564B6239A439B003FBC23 /* ListAlbumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564B5239A439B003FBC23 /* ListAlbumController.swift */; };
+		E39564B8239A6788003FBC23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564B7239A6788003FBC23 /* User.swift */; };
+		E39564BA239A67C6003FBC23 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39564B9239A67C6003FBC23 /* UserAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E3956471239A05CD003FBC23 /* listAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = listAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3956475239A05CD003FBC23 /* listAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listAlbumUITests.swift; sourceTree = "<group>"; };
 		E3956477239A05CD003FBC23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E39564B5239A439B003FBC23 /* ListAlbumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAlbumController.swift; sourceTree = "<group>"; };
+		E39564B7239A6788003FBC23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E39564B9239A67C6003FBC23 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +108,13 @@
 				E3956453239A05C8003FBC23 /* AppDelegate.swift */,
 				E3956455239A05C8003FBC23 /* SceneDelegate.swift */,
 				E3956457239A05C8003FBC23 /* ViewController.swift */,
+				E39564B5239A439B003FBC23 /* ListAlbumController.swift */,
 				E3956459239A05C8003FBC23 /* Main.storyboard */,
 				E395645C239A05CD003FBC23 /* Assets.xcassets */,
 				E395645E239A05CD003FBC23 /* LaunchScreen.storyboard */,
 				E3956461239A05CD003FBC23 /* Info.plist */,
+				E39564B7239A6788003FBC23 /* User.swift */,
+				E39564B9239A67C6003FBC23 /* UserAPI.swift */,
 			);
 			path = listAlbum;
 			sourceTree = "<group>";
@@ -260,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3956458239A05C8003FBC23 /* ViewController.swift in Sources */,
+				E39564B6239A439B003FBC23 /* ListAlbumController.swift in Sources */,
 				E3956454239A05C8003FBC23 /* AppDelegate.swift in Sources */,
+				E39564B8239A6788003FBC23 /* User.swift in Sources */,
 				E3956456239A05C8003FBC23 /* SceneDelegate.swift in Sources */,
+				E39564BA239A67C6003FBC23 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
