@@ -105,15 +105,14 @@
 		E3956452239A05C8003FBC23 /* listAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				E39564BE239A70ED003FBC23 /* Controller */,
+				E39564BD239A70D5003FBC23 /* Model */,
 				E3956453239A05C8003FBC23 /* AppDelegate.swift */,
 				E3956455239A05C8003FBC23 /* SceneDelegate.swift */,
-				E3956457239A05C8003FBC23 /* ViewController.swift */,
-				E39564B5239A439B003FBC23 /* ListAlbumController.swift */,
 				E3956459239A05C8003FBC23 /* Main.storyboard */,
 				E395645C239A05CD003FBC23 /* Assets.xcassets */,
 				E395645E239A05CD003FBC23 /* LaunchScreen.storyboard */,
 				E3956461239A05CD003FBC23 /* Info.plist */,
-				E39564B7239A6788003FBC23 /* User.swift */,
 				E39564B9239A67C6003FBC23 /* UserAPI.swift */,
 			);
 			path = listAlbum;
@@ -135,6 +134,23 @@
 				E3956477239A05CD003FBC23 /* Info.plist */,
 			);
 			path = listAlbumUITests;
+			sourceTree = "<group>";
+		};
+		E39564BD239A70D5003FBC23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E39564B7239A6788003FBC23 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E39564BE239A70ED003FBC23 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3956457239A05C8003FBC23 /* ViewController.swift */,
+				E39564B5239A439B003FBC23 /* ListAlbumController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
