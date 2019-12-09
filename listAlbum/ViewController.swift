@@ -18,9 +18,11 @@ class ViewController: UIViewController {
 
     weak var testView : UIView!
     weak var button : UIButton!
+    weak var labelView : UILabel!
     
     override func loadView() {
         super.loadView()
+        self.labelViews()
         self.buttonNext()
     }
     
@@ -36,16 +38,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.button.setTitle("asu", for: .normal)
-        // Do any additional setup after loading the view.
+        self.button.setTitle("Next", for: .normal)
+        self.labelView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        self.labelView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        self.labelView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     @objc func buttonAction(sender : UIButton!){
-        let vc = ListAlbumController()
+        let vc = UINavigationController(rootViewController: ListAlbumController())
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
     }
-
-
+    
+    func labelViews () {
+        let labelWelcome = UILabel()
+        labelWelcome.translatesAutoresizingMaskIntoConstraints = false
+        labelWelcome.center = CGPoint(x:0, y: 0)
+        labelWelcome.text = "Welcome to user list"
+        labelWelcome.textAlignment = .center
+        self.view.addSubview(labelWelcome)
+        self.labelView = labelWelcome
+    }
 }
 

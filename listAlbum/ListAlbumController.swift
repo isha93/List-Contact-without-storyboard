@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class ListAlbumController : UIViewController, UITableViewDataSource, UITableViewDelegate {
+    weak var navigationBar : UINavigationBar!
+    
     private let users = UserAPI.getUsers() // model
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -32,6 +34,7 @@ class ListAlbumController : UIViewController, UITableViewDataSource, UITableView
            self.view.addSubview(navigationBar);
            let navigationItem = UINavigationItem(title: "Navigation bar")
         view.backgroundColor = .white
+        self.navigationBarView()
         self.tableUser()
         navigationItem.title = "Contacts"
     }
@@ -47,6 +50,24 @@ class ListAlbumController : UIViewController, UITableViewDataSource, UITableView
         userTableView.dataSource = self
         userTableView.delegate = self
         userTableView.register(UserTableViewCell.self, forCellReuseIdentifier: "userCell")
+    }
+    
+    func navigationBarView(){
+        navigationItem.title = "Users"
+        self.navigationController?.navigationBar.barTintColor = .cyan
+        self.navigationController?.navigationBar.isTranslucent = false
+        var backbutton = UIButton(type: .custom)
+        backbutton.setImage(UIImage(named: "BackButton.png"), for: .normal) // Image can be downloaded from here below link
+        backbutton.setTitle("Back", for: .normal
+        )
+        backbutton.setTitleColor(backbutton.tintColor, for: .normal
+        ) // You can change the TitleColor
+        backbutton.addTarget(self, action: #selector(buttonDismis), for: .touchUpInside)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backbutton)
+    }
+    
+    @objc func buttonDismis(sender : UIButton!){
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
 
 }
